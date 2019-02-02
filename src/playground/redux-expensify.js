@@ -1,7 +1,6 @@
 import { createStore, combineReducers } from 'redux';
 import uuid from 'uuid';
 
-
 // ADD_EXPENSE
 const addExpense = (
   { description = '', 
@@ -129,8 +128,6 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
       return state
   }
 }
-// timestamps
-//
 
 
 // Get visible expenses
