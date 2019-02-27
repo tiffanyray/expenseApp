@@ -5,7 +5,7 @@ import Header from '../components/Header.js';
 import HelpPage from '../components/HelpPage.js';
 import EditExpensePage from '../components/EditExpense.js';
 import ExpenseDashboardPage from '../components/ExpenseDashboard.js';
-import AddExpense from '../components/AddExpense.js';
+import AddExpensePage from '../components/AddExpensePage.js';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -19,7 +19,7 @@ const AppRouter = () => (
                 />
                 <Route 
                     path="/create"
-                    component={AddExpense}
+                    component={AddExpensePage}
                 />
                 <Route 
                     path="/edit/:id"
