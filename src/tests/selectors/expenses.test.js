@@ -1,31 +1,8 @@
 import selectExpenses from '../../selectors/expenses';
 import moment from 'moment';
+import expenses from '../fixtures/expenses';
 
 // Testing expenses selectors
-//Array for test data
-const expenses = [
-    {
-        id: '1',
-        description: 'gum',
-        amount: 199,
-        note: '',
-        createdAt: 0,
-    },
-    {
-        id: '2',
-        description: 'rent',
-        amount: 109500,
-        note: '',
-        createdAt: moment(0).subtract(4, 'days').valueOf(),
-    },
-    {
-        id: '3',
-        description: 'credit card',
-        amount: 4500,
-        note: '',
-        createdAt: moment(0).add(4, 'days').valueOf(),
-    },
-]
 
 
 //testing case for text filter
