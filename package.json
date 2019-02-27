@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "live-server": "^1.2.1",
+    "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.3",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^12.7.0",
     "react-dom": "^16.8.3",
     "react-modal": "2.2.2",
     "react-redux": "^6.0.1",
