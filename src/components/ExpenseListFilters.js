@@ -62,18 +62,16 @@ export class ExpenseListFilters extends React.Component {
     }
 };
 
-const mapStateToProps = (state) => {
-    return {
-        setTextFilter: (text) => dispatch(setTextFilter(text)),
+const mapStateToProps = (state) => ({
+    filters: state.filters
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    setTextFilter: (text) => dispatch(setTextFilter(text)),
         sortByDate: () => dispatch(sortByDate()),
         sortByAmount: () => dispatch(sortByAmount()),
         setStartDate: (startDate) => dispatch(setStartDate(startDate)),
         setEndDate: (endDate) => dispatch(setEndDate(endDate))
-    }
-};
-
-const mapDispatchToProps = (dispatch) => {
-    onTextChange: () => dispatch(setTextFilter())
-};
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExpenseListFilters);
