@@ -1,5 +1,4 @@
 import selectExpensesTotal from '../../selectors/expenses-total';
-import { shallow } from 'enzyme';
 import expenses from '../fixtures/expenses';
 
 test('should return 0 if no expenses', () => {

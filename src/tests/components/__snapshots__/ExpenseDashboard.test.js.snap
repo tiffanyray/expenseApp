@@ -2,6 +2,7 @@
 
 exports[`setting up expensedashboard snapshot 1`] = `
 <div>
+  <Connect(ExpenseTotal) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>
