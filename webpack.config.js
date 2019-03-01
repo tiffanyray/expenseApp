@@ -9,7 +9,7 @@ module.exports = (env) => {
     return {
         entry: './src/app.js',
         output: {
-            path: path.join(__dirname, 'public', 'docs'),
+            path: path.join(__dirname, 'public'),
             filename: 'bundle.js'
         },
         //setting up the loader
@@ -46,8 +46,7 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true,
-            publicPath: '/docs/'
+            historyApiFallback: true
         }
     }
 }
