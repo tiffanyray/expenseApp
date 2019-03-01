@@ -5,7 +5,7 @@ exports[`should render initial snaphot of editexpensepage 1`] = `
   <ExpenseForm
     expense={
       Object {
-        "amount": 4500,
+        "amount": 45,
         "createdAt": 345600000,
         "description": "credit card",
         "id": "3",
